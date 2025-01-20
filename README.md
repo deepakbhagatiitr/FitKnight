@@ -10,15 +10,11 @@ FitKnight is a comprehensive fitness community platform that connects workout bu
    - Create and manage personal fitness profile
    - Set fitness goals and preferences
    - Specify workout availability
-   - Connect with other workout buddies
    - Join fitness groups
-   - Real-time chat with connections
 
 2. **Group Organizer**
    - Create and manage fitness groups
    - Set group activities and schedules
-   - Manage group members
-   - View potential member suggestions
    - Communicate with group members
 
 ### Core Functionality
@@ -37,8 +33,6 @@ FitKnight is a comprehensive fitness community platform that connects workout bu
 #### Workout Buddy Features
 - Smart matching algorithm based on:
   - Location proximity
-  - Schedule compatibility
-  - Fitness interests
   - Workout preferences
 - Match score calculation
 - Recommended workout buddies list
@@ -53,16 +47,12 @@ FitKnight is a comprehensive fitness community platform that connects workout bu
   - Location
 - Member management
   - Accept/reject join requests
-  - Remove members
-  - View member profiles
+  - see members
 - Potential member suggestions based on:
   - Location matching
-  - Schedule compatibility
-  - Activity preferences
 
 #### Communication
 - Real-time chat functionality
-  - Individual chats
   - Group chats
   - Message notifications
 - Join request system
@@ -78,15 +68,14 @@ FitKnight is a comprehensive fitness community platform that connects workout bu
   - Availability
 - Filter groups by:
   - Activity type
+  - Name
   - Location
-  - Schedule
 
 #### Notifications
 - Real-time notifications for:
   - Chat messages
   - Join requests
   - Request responses
-  - Group updates
 - WebSocket connection for instant updates
 
 ### Technical Architecture
@@ -100,20 +89,17 @@ FitKnight is a comprehensive fitness community platform that connects workout bu
   - Responsive layouts
 - **Asset Management**:
   - Image handling
-  - Resource management
 
 #### Backend Integration
 - RESTful API communication
 - WebSocket connections
 - Token-based authentication
 - Multipart form data handling
-- Error handling and recovery
+- Error handling
 
 #### Data Management
 - Secure token storage
 - Shared preferences for user data
-- File upload handling
-- Cache management
 
 ### API Endpoints
 
