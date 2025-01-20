@@ -178,28 +178,6 @@ FitKnight is a comprehensive fitness community platform that connects workout bu
    flutter run
    ```
 
-### Development Commands
-```bash
-# Get packages
-flutter pub get
-
-# Update packages
-flutter pub upgrade
-
-# Clean build
-flutter clean
-
-# Run the app in debug mode
-flutter run
-
-# Run the app in release mode
-flutter run --release
-
-# Build APK
-flutter build apk
-```
-
-
 ## Development Guidelines
 
 ### Code Structure
@@ -233,5 +211,26 @@ fitknight/
 ├── analysis_options.yaml      
 ├── .gitignore                  
 └── README.md  
+```
+
+### Development Commands
+```bash
+# Get packages
+flutter pub get
+
+# Update packages
+flutter pub upgrade
+
+# Clean build
+flutter clean
+
+# Run the app in debug mode
+flutter run
+
+# Run the app in release mode
+flutter run --release
+
+# Build APK
+flutter build apk
 ```
 
