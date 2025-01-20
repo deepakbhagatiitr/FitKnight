@@ -134,42 +134,25 @@ FitKnight is a comprehensive fitness community platform that connects workout bu
 - GET `/api/my-groups/` - List user's groups
 - PUT `/api/groups/{id}/` - Update group
 - DELETE `/api/groups/{id}/` - Delete group
-- POST `/api/groups/{id}/join/` - Request to join group
-- POST `/api/groups/{id}/leave/` - Leave group
+
 
 #### Chat
 - GET `/api/chat/rooms/` - List chat rooms
 - POST `/api/chat/rooms/` - Create chat room
 - GET `/api/chat/rooms/{id}/messages/` - Get room messages
 - POST `/api/chat/rooms/{id}/messages/` - Send message
-- WebSocket `/ws/chat/{room_id}/` - Real-time chat
 
-#### Notifications
-- GET `/api/notifications/` - List notifications
-- PUT `/api/notifications/{id}/` - Mark as read
-- WebSocket `/ws/notifications/` - Real-time notifications
 
 ### Security Features
 - Token-based authentication
 - Secure password handling
-- Protected API endpoints
 - WebSocket authentication
 - Input validation
 - Error handling
 
 ### Error Handling
-- Network error recovery
-- Token expiration handling
 - Invalid input handling
 - API error responses
-- Graceful degradation
-
-### Performance Optimization
-- Lazy loading
-- Caching strategies
-- Image optimization
-- Efficient API calls
-- Background processes
 
 ## Installation
 
@@ -182,7 +165,7 @@ FitKnight is a comprehensive fitness community platform that connects workout bu
 ### Setup
 1. Clone the repository:
    ```bash
-   git clone [repository-url]
+   git clone https://github.com/deepakbhagatiitr/FitKnight.git
    ```
 
 2. Install dependencies:
@@ -190,12 +173,7 @@ FitKnight is a comprehensive fitness community platform that connects workout bu
    flutter pub get
    ```
 
-3. Configure environment:
-   - Create `.env` file
-   - Set API endpoints
-   - Configure keys
-
-4. Run the application:
+3. Run the application:
    ```bash
    flutter run
    ```
@@ -232,116 +210,28 @@ flutter build apk
   - `services/` - API services
   - `providers/` - State management
   - `utils/` - Utilities
-  - `components/` - Complex components
+  - `components/` - Components
 
 ### Detailed Folder Structure
 ```
 fitknight/
-├── android/                    # Android specific files
-├── ios/                        # iOS specific files
-├── lib/                        # Main source code
-│   ├── components/             # Complex reusable components
-│   │   ├── chat/              # Chat related components
-│   │   │   ├── services/      # Chat services
-│   │   │   ├── widgets/       # Chat UI components
-│   │   │   └── group_chat.dart
-│   │   └── edit_group_page.dart
-│   ├── models/                # Data models
-│   │   ├── buddy.dart        # Workout buddy model
-│   │   ├── group.dart        # Group model
-│   │   ├── profile.dart      # User profile model
-│   │   ├── signup_form_data.dart
-│   │   └── user_role.dart
-│   ├── providers/            # State management
-│   │   ├── auth_provider.dart
-│   │   └── notification_provider.dart
-│   ├── screens/              # App screens/pages
-│   │   ├── buddy_finder_dashboard.dart
-│   │   ├── group_organizer_dashboard.dart
-│   │   ├── login_page.dart
-│   │   ├── signup_page.dart
-│   │   ├── profile_page.dart
-│   │   └── notifications_page.dart
-│   ├── services/             # API and business logic
-│   │   ├── auth_service.dart
-│   │   ├── buddy_finder_service.dart
-│   │   ├── group_service.dart
-│   │   ├── notification_service.dart
-│   │   └── profile_service.dart
-│   ├── utils/               # Utility functions and helpers
-│   │   ├── dashboard_router.dart
-│   │   └── constants.dart
-│   └── widgets/             # Reusable UI components
-│       ├── buddy/          # Buddy-related widgets
-│       │   ├── buddy_card.dart
-│       │   └── group_list_item.dart
-│       ├── common/         # Common widgets
-│       │   └── dashboard_app_bar.dart
-│       ├── group/         # Group-related widgets
-│       │   └── group_details/
-│       ├── profile/       # Profile-related widgets
-│       │   ├── profile_header.dart
-│       │   ├── contact_info_card.dart
-│       │   └── workout_preferences_card.dart
-│       └── signup/        # Signup-related widgets
-│           ├── workout_buddy_form.dart
-│           └── group_organizer_form.dart
-├── test/                  # Test files
-│   ├── unit/             # Unit tests
-│   ├── widget/           # Widget tests
-│   └── integration/      # Integration tests
-├── assets/               # Static assets
-│   ├── images/          # Image assets
-│   └── fonts/           # Font files
-├── web/                  # Web-specific files
-├── pubspec.yaml          # Project dependencies
-├── pubspec.lock         # Lock file for dependencies
-├── analysis_options.yaml # Dart analyzer settings
-├── .gitignore           # Git ignore file
-└── README.md            # Project documentation
+├── android/                   
+├── ios/                     
+├── lib/                        
+│   ├── components/             
+│   ├── models/                
+│   ├── providers/              
+│   ├── screens/                
+│   ├── services/               
+│   ├── utils/                  
+│   └── widgets/              
+├── test/                       
+├── assets/                     
+├── web/                        
+├── pubspec.yaml                
+├── pubspec.lock               
+├── analysis_options.yaml      
+├── .gitignore                  
+└── README.md  
 ```
 
-### Best Practices
-- Follow Flutter style guide
-- Write meaningful comments
-- Use consistent naming conventions
-- Implement error handling
-- Write unit tests
-- Document code changes
-
-### Contributing
-1. Fork the repository
-2. Create feature branch
-3. Commit changes
-4. Push to branch
-5. Create Pull Request
-
-## Testing
-- Unit tests
-- Widget tests
-- Integration tests
-- Manual testing checklist
-
-## Deployment
-- Version management
-- Release process
-- App store guidelines
-- Backend deployment
-- Monitoring setup
-
-## Support
-- Issue tracking
-- Documentation
-- Community guidelines
-- Contact information
-
-## License
-[Add License Information]
-
-## Authors
-[Add Author Information]
-
-## Acknowledgments
-- Flutter team
-- Contributors
-- Third-party libraries
